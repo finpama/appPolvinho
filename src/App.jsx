@@ -1,12 +1,58 @@
-import { useState } from 'react'
+import * as React from 'react'
+import Navbar from './AppComponents/Navbar.jsx'
+import ErrorPage from './AppComponents/ErrorPage.jsx'
+import {
+	createBrowserRouter,
+	Route,
+	Link,
+} from 'react-router-dom';
 
-function App() {
+const routesConfig = [
+	{
+		path: '/',
+		element: 
+			<div>
+				<h1>Login</h1>
+				<Navbar />
+			</div>
+		,
+		errorElement: <ErrorPage />,
+	},
+	{
+		path: '/portugues',
+		element: 
+			<div>
+				<h1>Português</h1>
+				<Navbar />
+			</div>
+		,
+		errorElement: <ErrorPage />,
+	},
+	{
+		path: '/matematica',
+		element: 
+			<div>
+				<h1>Matemática</h1>
+				<Navbar />
+			</div>
+		,
+		errorElement: <ErrorPage />,
+	},
+	{
+		path: '/conta',
+		element: 
+			<div>
+				<h1>Sua Conta</h1>
+				<Navbar />
+			</div>
+		,
+		errorElement: <ErrorPage />,
+	},
 
-  return (
-    <>
-      <h1>Polvinho Educa</h1>
-    </>
-  )
-}
+]
 
-export default App
+const AppRouter = createBrowserRouter(routesConfig)
+
+
+export default AppRouter
+
