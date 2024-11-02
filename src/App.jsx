@@ -1,10 +1,10 @@
 import * as React from 'react'
-import Navbar from './AppComponents/Navbar.jsx'
-import ErrorPage from './AppComponents/ErrorPage.jsx'
+import Navbar from './AppComponents/Navbar/Navbar.jsx'
+import ErrorPage from './AppComponents/ErrorPage/ErrorPage.jsx'
 import {
 	createBrowserRouter,
 	Route,
-	Link,
+	NavLink,
 } from 'react-router-dom';
 
 const routesConfig = [

@@ -1,0 +1,44 @@
+.navbar {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	width: 280px;
+	height: 70px;
+
+	background-color: #F4D7FF;
+	border-radius: 50px;
+
+	.lang {
+		width: 60px;
+		height: 60px;
+
+		.langOFF {
+			padding-left: 5px;
+		}
+
+		.langON {
+			width: 69.3px;
+			height: 60px;
+		}
+	}
+
+	.math {
+		width: 60px;
+	}
+
+	.account {
+		width: 60px;
+	}
+
+
+	* img {
+		width: 100%;
+	}
+
+}
