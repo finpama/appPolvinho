@@ -1,0 +1,65 @@
+@use 'sass:math';
+
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+
+
+$blue: #28407C;
+$green: #008E3F;
+$grey: #3E3E3E;
+$white: #E3E3E3;
+
+$bGlow: rgba(0, 73, 255, 0.22);
+$gGlow: rgba(32, 185, 99, 0.35);
+
+$bgBlue: #1F4E6C;
+$bgGreen: #11773E;
+
+$montAlternates: 'Montserrat Alternates', sans-serif;
+$sora: 'Sora', sans-serif;
+
+
+@function rem($px) {
+    $rem: math.div($px, 16);
+    @return #{$rem}rem;
+}
+
+@mixin align($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin grid($numCols, $colSize: 1fr, $numRows,  $rowSize: 1fr) {
+    display: grid;
+    grid-template-columns: repeat($numCols, $colSize);
+    grid-template-rows: repeat($numRows, $rowSize);
+}
+
+@mixin button($color: $blue, $width: 100%, $height: rem(35)) {
+    @include align();
+
+    width: $width;
+    height: $height;
+    border-radius: 7px;
+    background-color: $color;
+    color:white;
+}
+
+@mixin shadow($color: $bGlow) {
+    box-shadow: 3px 3px 8px 0px $color;
+}
+
+
+// CSS base da aplicação
+
+html {
+    background-color: #F9ECFE;
+
+    font-family: $montAlternates;
+    font-weight: 500;
+    font-size: 1.5rem;
+
+    margin: 50px 50px;
+}

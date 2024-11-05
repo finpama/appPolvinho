@@ -1,12 +1,11 @@
-import { NavLink } from 'react-router-dom'
-import { useState } from 'react'
 import './Navbar.scss'
+import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 
 import langImg from './Assets/Language.png'
 import mathImg from './Assets/Math.png'
 import accountImg from './Assets/Account.png'
-
 
 import langImg_ON from './Assets/Language_ON.png'
 import mathImg_ON from './Assets/Math_ON.png'
