@@ -1,4 +1,5 @@
 {
+  "homepage": "https://finpama.github.io/appPolvinho/",
   "name": "apppolvinho",
   "private": true,
   "version": "0.0.0",
@@ -8,9 +9,11 @@
     "build": "vite build",
     "test": "jest",
     "lint": "eslint .",
-    "preview": "vite preview --host"
+    "preview": "vite preview --host",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0",
