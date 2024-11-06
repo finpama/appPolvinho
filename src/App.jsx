@@ -1,14 +1,10 @@
-import * as React from 'react'
-
 import './Assets/rootTools.scss'
 import logoFull from './Assets/Logo_full.png'
 
 import Navbar from './AppComponents/Navbar/Navbar.jsx'
 import ErrorPage from './AppComponents/ErrorPage/ErrorPage.jsx'
 import {
-	createBrowserRouter,
-	Route,
-	NavLink,
+	createBrowserRouter
 } from 'react-router-dom';
 
 const routesConfig = [
