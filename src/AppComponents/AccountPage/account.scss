@@ -39,9 +39,66 @@
 		width: 100px;
 		height: 35px;	
 
+		background-color: #0000;
 		border: solid #BE0000 3.7px;
 		border-radius: 20px;
 	}
 
 }
 
+
+@media (min-width: 600px) {
+	
+	.account {
+		.container {
+			display: grid;
+			grid-template-columns: 1fr 3fr;
+			grid-template-rows: 1fr 1fr;
+			grid-template-areas: 
+				"pfp name name name"
+				"pfp exit exit exit"
+
+			;
+			justify-items: center;
+			align-items: center;
+			column-gap: 50px;
+
+
+			position: absolute;
+			top: 50%;
+			transform: translateY(-30%);
+			margin-left: 100px;
+		}
+
+		.logoFull {
+			width: 285px;
+			margin-bottom: 50px;
+		}
+
+		.blob {
+			height: 100px;
+			grid-area: pfp;
+		}
+
+		.pfp {
+			position: relative;
+			grid-area: pfp;
+			top: unset;
+			height: 62.5px;
+		}
+
+		.name {
+			grid-area: name;
+			justify-self: start;
+			transform: none;
+		}
+
+		.exitButton {
+			grid-area: exit;
+			justify-self: start;
+			margin-top: 0;
+		}
+
+	}
+
+}

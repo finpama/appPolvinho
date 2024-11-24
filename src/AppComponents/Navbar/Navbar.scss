@@ -42,3 +42,15 @@
 	}
 
 }
+
+@media (min-width: 600px) {
+
+	.navbar {
+		left: unset;
+		top: 58px;
+		right: 50px;
+		transform: translateX(0);
+
+	}
+	
+}

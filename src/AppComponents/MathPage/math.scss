@@ -1,25 +1,26 @@
 @import '../../Assets/rootTools.scss';
 
-.portuguese {
+.math {
 
 	.logo {
 		width: 39px;
 	}
 
 	.container {
-		@include align(column)
+		@include align(column);
+
 	}
 
 	.activeExercise {
-		animation: purpleGlow 3s alternate infinite;
+		animation: yellowGlow 3s alternate infinite;
 
 	}
 }
 
 @media (min-width: 600px) {
 
-	.portuguese {
-
+	.math {
+		
 		.logo {
 			width: 60px;
 		}
@@ -34,4 +35,3 @@
 	}
 	
 }
-

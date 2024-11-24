@@ -1,0 +1,34 @@
+@import '/src/Assets/rootTools.scss';
+
+.bloquedExercise {
+	font-size: rem(12);
+	background-color: #D2C9D4;
+	width: 300px;
+	padding: 33px 30px;
+	margin-top: 50px;
+	border-radius: 45px;
+
+	@include align(column, center, flex-start);
+
+
+	.title {
+		font-family: $sora;
+		font-weight: 700;
+		color: #8F8C8C;
+		margin-bottom: 20px;
+
+	}
+
+	.description {
+		font-family: $montAlternates;
+		font-weight: 500;
+		color: #8F8C8C;
+
+	}
+
+	.lock {
+		align-self: flex-end;
+		width: 30px;
+
+	}
+}

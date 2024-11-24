@@ -47,7 +47,7 @@ function LoginPage() {
 			<div className="container">
 				<div className="wrapper">
 					<label for="nameInput" className="title">Qual é o seu nome?</label>
-					<input className="nameInput" type="name" id="nameInput" placeholder="Nome" onKeyPress={inputEnter} type="text"/>
+					<input className="nameInput" type="name" id="nameInput" placeholder="Nome" onKeyPress={inputEnter}/>
 				</div>
 				
 				<button className="entryButton" onClick={buttonClick}>Entrar</button>

@@ -1,19 +1,25 @@
-import logoFull from '../../Assets/Logo_full.png'
+import './math.scss'
 
+import logo from '../../Assets/Logo.png'
+
+import BloquedExercise from '../Exercises/Bloqued/BloquedExercise.jsx'
 import Navbar from '../Navbar/Navbar.jsx'
 
 
 function MathPage() {
 
 	return (
-		<>
-				<img src={logoFull} width="250px" alt="Logo do aplicativo: Polvinho Educa" />
-				<br/><br/>
-				<h1>Matemática</h1>
-				<br/>
+		<div className="math">
+			<img className="logo" src={logo} alt="Logo do aplicativo: Polvinho Educa"/>
 
-				<Navbar/>
-		</>
+			{/*<Exercise title={} description={} open={}/>*/}
+			
+			<div className="container">
+				<BloquedExercise/>
+			</div>
+			
+			<Navbar/>
+		</div>
 	)
 }
 

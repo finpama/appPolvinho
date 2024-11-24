@@ -7,6 +7,11 @@
 
 		margin-top: 50px;
 	}
+
+	.wrapper {
+		@include align(column);
+		width: auto;
+	}
 	
 	.logoFull {
 		width: 190px;
@@ -30,10 +35,10 @@
 
 	.entryButton {
 		position: absolute;
-		bottom: 30px;
+		bottom: 60px;
 
-		width: 120px;
-		height: 40px;
+		width: 135px;
+		height: 45px;
 		padding-top: 2px;
 
 		font-weight: 700;
@@ -47,6 +52,26 @@
 		border-radius: 17px;
 	}
 
+}
+
+@media screen and (min-width: 600px)  {
+	.login {
+
+	
+		.logoFull {
+			width: 285px;
+		}
+
+		.nameInput {
+			width: 200%;
+		}
+
+		.entryButton {
+			position: static;
+			margin-top: 20px;
+			height: 35px;
+		}
+	}
 }
 
 

@@ -75,6 +75,26 @@ $fontColor: #4E0068;
     }
 }
 
+@keyframes yellowGlow {
+    0% {
+        box-shadow: 0 0 5px 0px #F3E03E;
+    }
+
+    100% {
+        box-shadow: 0 0 10px 5px #F3E03E;
+    }
+}
+
+@keyframes purpleGlow {
+    0% {
+        box-shadow: 0 0 5px 0px #910FBE;
+    }
+
+    100% {
+        box-shadow: 0 0 30px 5px #910FBE;
+    }
+}
+
 
 // CSS base da aplicação
 
