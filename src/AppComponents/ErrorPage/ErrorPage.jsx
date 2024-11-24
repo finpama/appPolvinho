@@ -1,6 +1,6 @@
 import './errorPage.scss'
 
-import errorLogo from './Assets/errorLogo.png'
+import errorLogo from './Assets/ErrorLogo.png'
 
 import { useRouteError, Link } from 'react-router-dom'
 
