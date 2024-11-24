@@ -4,19 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
 
 
-$blue: #28407C;
-$green: #008E3F;
-$grey: #3E3E3E;
-$white: #E3E3E3;
-
-$bGlow: rgba(0, 73, 255, 0.22);
-$gGlow: rgba(32, 185, 99, 0.35);
-
-$bgBlue: #1F4E6C;
-$bgGreen: #11773E;
-
 $montAlternates: 'Montserrat Alternates', sans-serif;
 $sora: 'Sora', sans-serif;
+
+$fontColor: #4E0068;
 
 
 @function rem($px) {
@@ -37,18 +28,51 @@ $sora: 'Sora', sans-serif;
     grid-template-rows: repeat($numRows, $rowSize);
 }
 
-@mixin button($color: $blue, $width: 100%, $height: rem(35)) {
+@mixin input($width: 100%, $height: rem(35)) {
+    @include align();
+
+    width: $width;
+    height: $height;
+    padding-left: 20px;
+    border-radius: $height;
+    border: none;
+
+    background-color: #EECCFB;
+    color: $fontColor;
+
+    font-weight: 700;
+    font-family: $sora;
+
+    &::placeholder {
+        color: #C37EDB;
+}
+
+}
+
+
+@mixin button($color, $width: 100%, $height: rem(35)) {
     @include align();
 
     width: $width;
     height: $height;
     border-radius: 7px;
     background-color: $color;
-    color:white;
+    color: white;
 }
 
 @mixin shadow($color: $bGlow) {
     box-shadow: 3px 3px 8px 0px $color;
+}
+
+
+@keyframes blobMotion {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(440deg);
+    }
 }
 
 
@@ -60,6 +84,7 @@ html {
     font-family: $montAlternates;
     font-weight: 500;
     font-size: 1.5rem;
+    color: $fontColor;
 
-    margin: 50px 50px;
+    padding: 50px 50px;
 }

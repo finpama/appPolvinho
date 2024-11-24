@@ -1,6 +1,10 @@
+import './account.scss'
+
 import { useNavigate } from 'react-router-dom'
 
 import logoFull from '../../Assets/Logo_full.png'
+import blob from './Assets/blob.png'
+import pfp from './Assets/pfp.png'
 
 import Navbar from '../Navbar/Navbar.jsx'
 
@@ -14,14 +18,19 @@ function AccountPage() {
 	}
 
 	return (
-		<>
-				<img src={logoFull} width="250px" alt="Logo do aplicativo: Polvinho Educa" />
-				<br /><br />
-				<h1>Sua Conta</h1>
-				<br />
-				<button onClick={exitClick}>SAIR</button>
+		<>			
+			<img className="logoFull" src={logoFull} alt="Logo do aplicativo: Polvinho Educa"/>
 
-				<Navbar />
+			<div className="account_container">
+				<img className="blob" src={blob} alt="Fundo da foto de perfil"/>
+				<img className="pfp" src={pfp} alt="Foto de perfil"/>
+				
+				<h1 className="name">{localStorage.name}</h1>
+
+				<button className="exitButton" onClick={exitClick}>SAIR</button>
+			</div>
+
+			<Navbar />
 		</>
 	)
 }
