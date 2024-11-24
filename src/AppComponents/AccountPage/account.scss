@@ -1,41 +1,47 @@
 @import '../../Assets/rootTools.scss';
 
-.account_container {
-	@include align(column)
+
+.account {
+
+	.container {
+		@include align(column)
+	}
+
+	.logoFull {
+		width: 190px;
+		margin-bottom: 50px;
+	}
+
+	.blob {
+		animation: blobMotion infinite 8s alternate-reverse;
+		height: 80px;
+	}
+
+	.pfp {
+		position: relative;
+		top: -65px;
+		height: 50px;
+	}
+
+	.name {
+		text-align: center;
+		font-weight: 600;
+		transform: translateY(-30px);
+	}
+
+	.exitButton {
+		margin-top: 15px;
+
+		color: #BE0000;
+		font-weight: 700;
+		font-family: $montAlternates;
+
+		width: 100px;
+		height: 35px;	
+
+		border: solid #BE0000 3.7px;
+		border-radius: 20px;
+	}
+
 }
 
-.logoFull {
-	width: 70%;
-	margin-bottom: 50px;
-}
-
-.blob {
-	animation: blobMotion infinite 8s alternate-reverse;
-	height: 80px;
-}
-
-.pfp {
-	position: relative;
-	top: -65px;
-	height: 50px;
-}
-
-.name {
-	text-align: center;
-	font-weight: 600;
-	transform: translateY(-30px);
-}
-
-.exitButton {
-	margin-top: 15px;
-
-	color: #BE0000;
-	font-weight: 700;
-	font-family: $montAlternates;
-
-	width: 100px;
-	height: 35px;	
-
-	border: solid #BE0000 3.7px;
-	border-radius: 20px;
-}

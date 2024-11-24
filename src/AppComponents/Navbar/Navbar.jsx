@@ -13,7 +13,7 @@ import accountImg_ON from './Assets/Account_ON.png'
 
 function Navbar() {
 
-	return <>
+	return (
 		<nav className="navbar">
 			<NavLink className='lang' to="/portugues">
 				{({ isActive }) => isActive ? 
@@ -40,7 +40,7 @@ function Navbar() {
 			</NavLink>
 
 		</nav>
-	</>
+	)
 	
 }
 

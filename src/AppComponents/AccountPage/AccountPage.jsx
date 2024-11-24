@@ -18,10 +18,10 @@ function AccountPage() {
 	}
 
 	return (
-		<>			
+		<div className="account">			
 			<img className="logoFull" src={logoFull} alt="Logo do aplicativo: Polvinho Educa"/>
 
-			<div className="account_container">
+			<div className="container">
 				<img className="blob" src={blob} alt="Fundo da foto de perfil"/>
 				<img className="pfp" src={pfp} alt="Foto de perfil"/>
 				
@@ -31,7 +31,7 @@ function AccountPage() {
 			</div>
 
 			<Navbar />
-		</>
+		</div>
 	)
 }
 

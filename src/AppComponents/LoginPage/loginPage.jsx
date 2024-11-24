@@ -41,18 +41,18 @@ function LoginPage() {
 	}
 
 	return (
-		<>
+		<div className="login">
 			<img className="logoFull" src={logoFull} alt="Logo do aplicativo: Polvinho Educa"/>
 
-			<div className="login_container">
+			<div className="container">
 				<div className="wrapper">
-					<h1 className="title">Qual é o seu nome?</h1>
-					<input className="nameInput" placeholder="Nome" onKeyPress={inputEnter} type="text"/>
+					<label for="nameInput" className="title">Qual é o seu nome?</label>
+					<input className="nameInput" type="name" id="nameInput" placeholder="Nome" onKeyPress={inputEnter} type="text"/>
 				</div>
 				
 				<button className="entryButton" onClick={buttonClick}>Entrar</button>
 			</div>
-		</>
+		</div>
 	)
 } 
 

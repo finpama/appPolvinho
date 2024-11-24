@@ -1,47 +1,53 @@
 @import '../../Assets/rootTools.scss';
 
+.login {
 
-.login_container {
-	@include align(column, space-between);
+	.container {
+		@include align(column, space-between);
 
-	margin-top: 50px;
+		margin-top: 50px;
+	}
+	
+	.logoFull {
+		width: 190px;
+		margin-bottom: 50px;
+	}
+
+	.title {
+		font-weight: 600;
+		font-size: rem(14);
+		font-family: $sora;
+	}
+
+	.nameInput {
+		@include input();
+		height: 40px;
+		width: 92.5%;
+
+		margin-top: 30px;
+
+	}
+
+	.entryButton {
+		position: absolute;
+		bottom: 30px;
+
+		width: 120px;
+		height: 40px;
+		padding-top: 2px;
+
+		font-weight: 700;
+		font-family: $montAlternates;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+
+		color: #FFF;
+		background-color: #910FBE;
+		border: none;
+		border-radius: 17px;
+	}
+
 }
 
-.logoFull {
-	width: 70%;
-}
 
-.title {
-	font-weight: 600;
-	font-size: rem(14);
-	font-family: $sora;
-}
-
-.nameInput {
-	@include input();
-	height: 40px;
-	width: 92.5%;
-
-	margin-top: 30px;
-
-}
-
-.entryButton {
-	position: absolute;
-	bottom: 30px;
-
-	width: 120px;
-	height: 40px;
-	padding-top: 2px;
-
-	font-weight: 700;
-	font-family: $montAlternates;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-
-	color: #FFF;
-	background-color: #910FBE;
-	border: none;
-	border-radius: 17px;
-}
 
